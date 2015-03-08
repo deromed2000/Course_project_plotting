@@ -20,7 +20,7 @@ with(subset, {
   lines(datetime2, subset$Sub_metering_2, col = "red")
   lines(datetime2, subset$Sub_metering_3, col = "blue")
   legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-         col = c("black", "red", "blue"),lwd = 1, lty = 1, merge = FALSE)
+         col = c("black", "red", "blue"),lwd = 1, lty = 1, cex= 0.25)
   plot(datetime2, subset$Voltage, type = "l", xlab = "datetime",
        ylab = "Voltage")
   plot(datetime2, subset$Global_reactive_power, type = "l", xlab = "datetime",
